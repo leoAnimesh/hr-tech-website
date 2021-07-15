@@ -1,1 +1,244 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.flex-col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.justify-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.btn {
+  padding: 8px 15px;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-style: none;
+  background-color: #FF725E;
+  color: #fff;
+  cursor: pointer;
+}
+
+nav {
+  font-family: "Poppins", sans-serif;
+  overflow: auto;
+  padding: 0.5rem 1rem;
+}
+
+nav .navleft span {
+  margin-left: 10px;
+}
+
+nav .navleft img {
+  width: 10%;
+}
+
+nav .navleft .links {
+  display: none;
+}
+
+nav .navright {
+  display: none;
+}
+
+#toggle-btn {
+  background-color: #FF725E;
+  padding: 0.4rem 0.7rem;
+  border-style: none;
+  cursor: pointer;
+}
+
+.toggle .navleft .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 6%;
+}
+
+.toggle .navleft .links a {
+  margin-bottom: 5px;
+}
+
+.toggle .navright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  position: absolute;
+  top: 17%;
+}
+
+.toggle .navright a {
+  margin-left: 10px;
+}
+
+.toggle .navright button {
+  padding: 6px 10px;
+}
+
+.intro {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.intro .intro-img {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 280px;
+}
+
+.intro .intro-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.intro .intro-details {
+  font-family: "Montserrat", sans-serif;
+}
+
+.intro .intro-details h1 {
+  width: 70%;
+  line-height: 35px;
+  margin: 1rem 2rem;
+}
+
+.intro .intro-details h1 span {
+  font-family: "Poppins", sans-serif;
+  color: #FF725E;
+}
+
+.intro .intro-details p {
+  font-family: "Montserrat", sans-serif;
+  width: 90%;
+  margin-bottom: 1rem;
+  line-height: 24px;
+}
+
+.intro .intro-details form {
+  width: 90%;
+  margin-left: 2rem;
+}
+
+.intro .intro-details form div {
+  margin-bottom: 10px;
+}
+
+.intro .intro-details form div input {
+  width: 60%;
+  padding: 0.5rem;
+}
+
+.intro .intro-details form span {
+  margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.intro .intro-details form span i {
+  color: green;
+  margin: 0rem 0.2rem;
+}
+
+@media only screen and (min-width: 769px) {
+  nav .navleft img {
+    width: 5%;
+  }
+  nav .navleft span {
+    margin-right: 1rem;
+  }
+  nav .navleft a {
+    margin-left: 1rem;
+  }
+  nav .navleft .links {
+    display: block;
+  }
+  nav .navright {
+    display: block;
+  }
+  nav .navright a {
+    margin-right: 1rem;
+  }
+  nav #toggle-btn {
+    display: none;
+  }
+  .intro {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 1rem 1rem 1rem 3rem;
+  }
+  .intro .intro-img {
+    width: 55%;
+    height: 450px;
+  }
+  .intro .intro-img img {
+    width: 100%;
+  }
+  .intro .intro-details {
+    margin-left: 2rem;
+    width: 40%;
+  }
+  .intro .intro-details h1 {
+    width: 70%;
+  }
+  .intro .intro-details p {
+    width: 80%;
+  }
+  .intro .intro-details form input {
+    background-color: #F0EEEE;
+  }
+  .intro .intro-details span {
+    margin: 0.1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

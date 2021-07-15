@@ -1,30 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- fontawesome  -->
+    <script src="https://kit.fontawesome.com/caedbd1bf2.js" crossorigin="anonymous"></script>
+    <!-- custom stylesheet  -->
     <link rel="stylesheet" href="./sass/style.css">
 </head>
+
 <body>
-    <nav>
-        <div class="navleft">
-            <div>
-                <img src="./Images/team.png" alt="">
-                <span>Logo</span>
+    <nav class="flex justify-between items-center">
+        <div class="navleft flex items-center">
+            <img src="./Images/logo.png" alt="">
+            <span>Logo</span>
+            <div class="links">
+                <a href="">Services</a>
+                <a href="">Pricing</a>
+                <a href="">About Us</a>
             </div>
-            <ul>
-                <li><a href="">Services</a></li>
-                <li><a href="">Pricing</a></li>
-                <li><a href="">About Us</a></li>
-            </ul>
         </div>
-        <div class="navright">
+        <div class="navright flex items-center">
             <a href="">LogIn</a>
-            <button>Register</button>
+            <button class="btn">Register</button>
         </div>
+        <button id="toggle-btn">
+            <i class="fas fa-bars"></i>
+        </button>
     </nav>
+
+    <section class="intro flex items-center">
+        <div class="intro-img flex">
+            <img src="./Images/Group therapy-bro.png" alt="intro-img">
+        </div>
+        <div class="intro-details">
+            <h1>
+                Spending too much time on HR, not your business?
+                <br>
+                <span>We can fix that.</span>
+            </h1>
+            <form action="" class="flex flex-col">
+                <p>Streamline onboarding, benefits, payroll, PTO, and more with our simple, intuitive platform.</p>
+                <div class="flex flex-row">
+                    <input type="email" placeholder="📬 &nbsp Your Email">
+                    <button type="submit" class="btn">Join Now</button>
+                </div>
+                <span><i class="fas fa-check-circle"></i> Get 1 month free trial</span>
+                <span><i class="fas fa-check-circle"></i> No credit needed</span>
+                <span><i class="fas fa-check-circle"></i> Also No setup needed</span>
+            </form>
+        </div>
+    </section>
+
+    <section class="features">
+        <div>
+            <h1>HR . Manage your peoples with ease</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam deserunt blanditiis dolore, dicta modi quam tenetur dolorem veritatis nam porro itaque neque iusto exercitationem, nisi saepe velit amet commodi autem.</p>
+        </div>
+        <div>
+            <img src="./Images/" alt="">
+        </div>
+    </section>
+
     <script src="./Js/script.js"></script>
 </body>
+
 </html>
