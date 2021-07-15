@@ -4,6 +4,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: $font-primary;
 }
 
 //utility classes and global styles
@@ -50,7 +51,6 @@ a{
 
 // nav bar styling 
 nav{
-    font-family: $font-primary;
     overflow: auto;
     padding: 0.5rem 1rem;
     .navleft{
@@ -105,7 +105,6 @@ nav{
 }
 
 //intro section
-
 .intro{
     flex-direction: column;
     .intro-img{
@@ -123,7 +122,6 @@ nav{
             line-height: 35px;
             margin: 1rem 2rem;
             span{
-                font-family: $font-primary;
                 color: $orangise;
             }
         }
@@ -154,6 +152,116 @@ nav{
         }
     }
 }
+
+//features section
+.features1{
+    background-color: $orangise;
+    flex-direction: column;
+    margin-top: 2rem;
+    .features1-details{
+        padding: 0.2rem;
+        h1{
+            padding: 1rem;
+            span{
+                color: black;
+            }
+            color: #fff;
+        }
+        p{
+            padding: 0.5rem 1rem;
+            color: #fff;
+        }
+    }
+    .features1-img{
+        background-color: #fff;
+        img{
+            width: 100%;
+            position: relative;
+            top: 15px;
+        }
+    }
+}
+
+.features2{
+    background-color: $orangise;
+    flex-direction: column-reverse;
+    .features2-details{
+        padding: 0.2rem;
+        h1{
+            padding: 1rem;
+            span{
+                color: #fff;
+            }
+            color: black;
+        }
+        p{
+            padding: 0rem 1rem;
+            color: #fff;
+        }
+        button{
+            margin: 1rem;
+            background-color: #fff;
+            color: black;
+        }
+    }
+    .features2-img{
+        img{
+            width: 100%;
+        }
+    }
+}
+.features3{
+    background-color: $orangise;
+    flex-direction: column;
+    .features3-details{
+        background-color: #fff;
+        padding: 0.2rem;
+        h1{
+            padding: 1rem;
+            span{
+                color: $orangise;
+            }
+            color: black;
+        }
+        p{
+            padding: 0rem 1rem;
+            color: black;
+        }
+        button{
+            margin: 1rem;
+        }
+
+        .contact{
+            width: 100%;
+            padding: 0.5rem;
+            form{
+                margin-left: 1rem;
+                width: 90%;
+                input{
+                    padding: 10px;
+                    margin-bottom: 1rem;
+                }
+                textarea{
+                    padding: 10px;
+                    width: 100%;
+                    height: 120px;
+                    margin-bottom: 1rem;
+                }
+                button{
+                    margin: 0px;
+                }
+            }
+        }
+    }
+    .features3-img{
+        img{
+            width: 100%;
+        }
+    }
+}
+
+
+
 
 
 
@@ -215,6 +323,82 @@ nav{
             span{
                 margin: 0.1rem;
             } 
+        }
+    }
+
+    .features1{
+        flex-direction: row;
+        .features1-details{
+            margin-left: 3rem;
+            width: 50%;
+            h1{
+                width: 90%;
+                font-size: 40px;
+                line-height: 55px;
+            }
+            p{
+                width: 90%;
+            }
+        }
+        .features1-img{
+            width: 54%;
+            height: 500px;
+            img{
+                object-fit: cover;
+                height: 100%;
+            }
+        }
+    }    
+    .features2{
+        flex-direction: row;
+        .features2-img{
+            width: 50%;
+            img{
+                width: 100%;
+            }
+        }
+        .features2-details{
+            width: 50%;
+            h1{
+                width: 90%;
+                font-size: 40px;
+                line-height: 55px;
+            }
+            p{
+                width: 90%;
+            }
+            button{
+                background-color: #fff;
+                color: black;
+                margin: 1rem;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .features3{
+        flex-direction: row;
+        .features3-img{
+            width: 50%;
+            img{
+                width: 100%;
+            }
+        }
+        .features3-details{
+            padding-top: 2rem;
+            padding-left: 2rem;
+            width: 50%;
+            h1{
+                width: 90%;
+                font-size: 40px;
+                line-height: 55px;
+            }
+            p{
+                width: 90%;
+            }
+            button{
+                margin: 1rem;
+                text-transform: uppercase;
+            }
         }
     }
 }

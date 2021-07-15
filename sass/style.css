@@ -4,6 +4,7 @@
   margin: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 .flex {
@@ -55,7 +56,6 @@ a {
 }
 
 nav {
-  font-family: "Poppins", sans-serif;
   overflow: auto;
   padding: 0.5rem 1rem;
 }
@@ -153,7 +153,6 @@ nav .navright {
 }
 
 .intro .intro-details h1 span {
-  font-family: "Poppins", sans-serif;
   color: #FF725E;
 }
 
@@ -186,6 +185,140 @@ nav .navright {
 .intro .intro-details form span i {
   color: green;
   margin: 0rem 0.2rem;
+}
+
+.features1 {
+  background-color: #FF725E;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 2rem;
+}
+
+.features1 .features1-details {
+  padding: 0.2rem;
+}
+
+.features1 .features1-details h1 {
+  padding: 1rem;
+  color: #fff;
+}
+
+.features1 .features1-details h1 span {
+  color: black;
+}
+
+.features1 .features1-details p {
+  padding: 0.5rem 1rem;
+  color: #fff;
+}
+
+.features1 .features1-img {
+  background-color: #fff;
+}
+
+.features1 .features1-img img {
+  width: 100%;
+  position: relative;
+  top: 15px;
+}
+
+.features2 {
+  background-color: #FF725E;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.features2 .features2-details {
+  padding: 0.2rem;
+}
+
+.features2 .features2-details h1 {
+  padding: 1rem;
+  color: black;
+}
+
+.features2 .features2-details h1 span {
+  color: #fff;
+}
+
+.features2 .features2-details p {
+  padding: 0rem 1rem;
+  color: #fff;
+}
+
+.features2 .features2-details button {
+  margin: 1rem;
+  background-color: #fff;
+  color: black;
+}
+
+.features2 .features2-img img {
+  width: 100%;
+}
+
+.features3 {
+  background-color: #FF725E;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.features3 .features3-details {
+  background-color: #fff;
+  padding: 0.2rem;
+}
+
+.features3 .features3-details h1 {
+  padding: 1rem;
+  color: black;
+}
+
+.features3 .features3-details h1 span {
+  color: #FF725E;
+}
+
+.features3 .features3-details p {
+  padding: 0rem 1rem;
+  color: black;
+}
+
+.features3 .features3-details button {
+  margin: 1rem;
+}
+
+.features3 .features3-details .contact {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.features3 .features3-details .contact form {
+  margin-left: 1rem;
+  width: 90%;
+}
+
+.features3 .features3-details .contact form input {
+  padding: 10px;
+  margin-bottom: 1rem;
+}
+
+.features3 .features3-details .contact form textarea {
+  padding: 10px;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 1rem;
+}
+
+.features3 .features3-details .contact form button {
+  margin: 0px;
+}
+
+.features3 .features3-img img {
+  width: 100%;
 }
 
 @media only screen and (min-width: 769px) {
@@ -239,6 +372,91 @@ nav .navright {
   }
   .intro .intro-details span {
     margin: 0.1rem;
+  }
+  .features1 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .features1 .features1-details {
+    margin-left: 3rem;
+    width: 50%;
+  }
+  .features1 .features1-details h1 {
+    width: 90%;
+    font-size: 40px;
+    line-height: 55px;
+  }
+  .features1 .features1-details p {
+    width: 90%;
+  }
+  .features1 .features1-img {
+    width: 54%;
+    height: 500px;
+  }
+  .features1 .features1-img img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+  }
+  .features2 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .features2 .features2-img {
+    width: 50%;
+  }
+  .features2 .features2-img img {
+    width: 100%;
+  }
+  .features2 .features2-details {
+    width: 50%;
+  }
+  .features2 .features2-details h1 {
+    width: 90%;
+    font-size: 40px;
+    line-height: 55px;
+  }
+  .features2 .features2-details p {
+    width: 90%;
+  }
+  .features2 .features2-details button {
+    background-color: #fff;
+    color: black;
+    margin: 1rem;
+    text-transform: uppercase;
+  }
+  .features3 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .features3 .features3-img {
+    width: 50%;
+  }
+  .features3 .features3-img img {
+    width: 100%;
+  }
+  .features3 .features3-details {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    width: 50%;
+  }
+  .features3 .features3-details h1 {
+    width: 90%;
+    font-size: 40px;
+    line-height: 55px;
+  }
+  .features3 .features3-details p {
+    width: 90%;
+  }
+  .features3 .features3-details button {
+    margin: 1rem;
+    text-transform: uppercase;
   }
 }
 /*# sourceMappingURL=style.css.map */
